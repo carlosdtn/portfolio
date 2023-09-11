@@ -63,6 +63,14 @@
     --border: 12 6.5% 15.1%;
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
+
+    --cd-dark-blue: 221 47% 7%;
+    --cd-midnight-blue: 234 17% 16%;
+    --cd-light-blue: 198 100% 56%;
+    --cd-gray: 0 0% 85%;
+    --cd-purple: 250 100% 60%;
+    --cd-green: 146 98% 82%;
+    --cd-dark-gray: 0 9% 30%;
   }
 }
 
@@ -72,5 +80,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .animate-gradient {
+    background-size: 300%;
+    -webkit-animation: animatedgradient 6s ease infinite alternate;
+    -moz-animation: animatedgradient 6s ease infinite alternate;
+    animation: animatedgradient 6s ease infinite alternate;
+  }
+
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
