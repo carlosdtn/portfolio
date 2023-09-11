@@ -5,11 +5,13 @@ import ShowcaseContent from '../molecules/showcase-content';
 interface ShowcaseSectionProps {
   contentType: ShowcaseTypeEnum;
   title: string;
+  stackType?: string;
 }
 
 const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
   contentType,
-  title
+  title,
+  stackType
 }) => {
   return (
     <section className="flex flex-col gap-4">
@@ -22,7 +24,7 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
             </Button>
           ))}
       </div>
-      <ShowcaseContent contentType={contentType} />
+      <ShowcaseContent contentType={contentType} stackType={stackType} />
     </section>
   );
 };

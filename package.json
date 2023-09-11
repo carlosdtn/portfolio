@@ -31,5 +31,8 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.156.1",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1"
   }
 }

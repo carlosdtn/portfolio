@@ -6,16 +6,19 @@ export default function StackPage() {
     <div className="flex flex-row justify-center">
       <main className="w-[42%] mt-16 flex flex-col gap-16 mb-16">
         <ShowcaseSection
-          title="My Stack"
-          contentType={ShowcaseTypeEnum.Generic}
+          title="Current Expertise"
+          contentType={ShowcaseTypeEnum.Stack}
+          stackType="current"
         />
         <ShowcaseSection
-          title="In learning process"
-          contentType={ShowcaseTypeEnum.Generic}
+          title="Continuous Learning"
+          contentType={ShowcaseTypeEnum.Stack}
+          stackType="learning"
         />
         <ShowcaseSection
-          title="In planning"
-          contentType={ShowcaseTypeEnum.Generic}
+          title="Future Planning"
+          contentType={ShowcaseTypeEnum.Stack}
+          stackType="planning"
         />
       </main>
     </div>

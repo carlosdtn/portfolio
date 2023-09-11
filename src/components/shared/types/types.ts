@@ -20,3 +20,10 @@ export interface CardProps {
     alt: string;
   };
 }
+
+export interface StackProps {
+  [key: string]: {
+    name: string;
+    icon: string;
+  }[];
+}
