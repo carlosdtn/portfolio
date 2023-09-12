@@ -6,6 +6,7 @@ import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 import { TopicTagEnum } from '../atoms/types/types';
 import CompactCard from './compact-card';
+import PostCard from '@/components/shared/molecules/post-card';
 
 interface SummaryContentProps {
   type: TopicTagEnum;
@@ -139,7 +140,7 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
     return (
       <div className="flex flex-col w-full gap-3">
         {postsData.map((post) => (
-          <CompactCard key={post.id} type={type} data={post} />
+          <PostCard key={post.id} data={post} />
         ))}
       </div>
     );

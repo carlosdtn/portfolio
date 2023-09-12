@@ -1,8 +1,9 @@
 import { CardProps } from '@/components/shared/types/types';
 import { ShowcaseTypeEnum } from '../organisms/types/types';
 import Image from 'next/image';
-import { defaultImages } from '@/components/shared/constants';
-import CardTag from '@/components/shared/card-tag/card-tag';
+import { defaultImages } from '@/components/shared/utils/constants';
+import CardTag from '@/components/shared/atoms/card-tag';
+import PostCard from '@/components/shared/molecules/post-card';
 
 const ShowcaseCard: React.FC<{
   type: ShowcaseTypeEnum;
@@ -33,10 +34,8 @@ const ShowcaseCard: React.FC<{
       </div>
     );
   } else if (type === ShowcaseTypeEnum.Blog) {
-    return <div>BlogContent</div>;
+    return <PostCard data={data} />;
   }
-
-  return <div></div>;
 };
 
 export default ShowcaseCard;

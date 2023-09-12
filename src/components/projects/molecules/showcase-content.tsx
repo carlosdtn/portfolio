@@ -1,7 +1,7 @@
 import TechTag from '@/components/stack/atoms/tech-tag';
 import { ShowcaseTypeEnum } from '../organisms/types/types';
 import ShowcaseCard from './showcase-card';
-import { projectData, StackData } from '@/data';
+import { postsData, projectData, StackData } from '@/data';
 
 interface ShowcaseContentProps {
   contentType: ShowcaseTypeEnum;
@@ -21,7 +21,13 @@ const ShowcaseContent: React.FC<ShowcaseContentProps> = ({
       </div>
     );
   } else if (contentType === ShowcaseTypeEnum.Blog) {
-    return <div>BlogContent</div>;
+    return (
+      <div className="flex flex-col w-full gap-3">
+        {postsData.map((post) => (
+          <ShowcaseCard key={post.id} type={contentType} data={post} />
+        ))}
+      </div>
+    );
   } else if (contentType === ShowcaseTypeEnum.Stack) {
     return (
       <div className="grid grid-cols-4 gap-3">
