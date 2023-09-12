@@ -1,3 +1,10 @@
+export enum ShowcaseTypeEnum {
+  Project = 'Project',
+  Blog = 'Blog',
+  Stack = 'Stack',
+  Generic = 'Generic'
+}
+
 export type ResourceType = {
   category: string;
   link: string;

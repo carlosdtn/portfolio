@@ -1,5 +1,6 @@
-import ShowcaseSection from '@/components/projects/organisms/showcase.section';
-import { ShowcaseTypeEnum } from '@/components/projects/organisms/types/types';
+import ShowcaseProjectContent from '@/components/render-content/showcase-project-content';
+import ShowcaseSection from '@/components/shared/organisms/showcase.section';
+import { ShowcaseTypeEnum } from '@/components/shared/types/types';
 
 export default function ProjectsPage() {
   return (
@@ -8,6 +9,7 @@ export default function ProjectsPage() {
         <ShowcaseSection
           title="Projects"
           contentType={ShowcaseTypeEnum.Project}
+          renderContent={<ShowcaseProjectContent />}
         />
       </main>
     </div>

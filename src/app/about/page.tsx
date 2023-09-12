@@ -1,5 +1,5 @@
-import ShowcaseSection from '@/components/projects/organisms/showcase.section';
-import { ShowcaseTypeEnum } from '@/components/projects/organisms/types/types';
+import ShowcaseSection from '@/components/shared/organisms/showcase.section';
+import { ShowcaseTypeEnum } from '@/components/shared/types/types';
 
 export default function AboutPage() {
   return (
