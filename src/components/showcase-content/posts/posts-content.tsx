@@ -1,7 +1,7 @@
 import PostCard from '@/components/shared/molecules/post-card';
 import { postsData } from '@/data';
 
-const ShowcasePostContent = () => {
+const PostContent = () => {
   return (
     <div className="flex flex-col w-full gap-3">
       {postsData.map((post) => (
@@ -11,4 +11,4 @@ const ShowcasePostContent = () => {
   );
 };
 
-export default ShowcasePostContent;
+export default PostContent;

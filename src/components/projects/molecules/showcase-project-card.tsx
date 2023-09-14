@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ShowcaseProjectCard = ({ data }: { data: Partial<CardProps> }) => {
   return (
-    <div className="flex flex-col w-full gap-2 p-3 border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10">
+    <div className="flex flex-col w-full gap-2 p-3 transition-all duration-300 ease-in-out border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10 hover:border-cd-gray/40 focus-within:border-cd-gray/40">
       <Image
         className="relative object-cover w-full border rounded-md h-28 border-cd-gray/10"
         width={90}

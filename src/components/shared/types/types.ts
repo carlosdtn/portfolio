@@ -5,6 +5,13 @@ export enum ShowcaseTypeEnum {
   Generic = 'Generic'
 }
 
+export enum WorkTypeEnum {
+  Corporate = 'Corporate Employment',
+  Freelance = 'Freelance Work',
+  Volunteer = 'Volunteer Work',
+  Collaborative = 'Collaborative Projects'
+}
+
 export type ResourceType = {
   category: string;
   link: string;
@@ -18,19 +25,33 @@ export interface CardProps {
   resources: ResourceType[];
   tags: string[];
   date: string;
-  logo: {
-    src: string;
-    alt: string;
-  };
+  technologies: {
+    name: string;
+    icon: string;
+  }[];
   image: {
     src: string;
     alt: string;
   };
 }
 
-export interface StackProps {
+export interface stackProps {
   [key: string]: {
     name: string;
     icon: string;
   }[];
+}
+
+export interface WorkExperienceProps {
+  id: number;
+  workType: WorkTypeEnum;
+  company: string;
+  position: string;
+  logo: {
+    src: string;
+    alt: string;
+  };
+  startDate: string;
+  endDate: string;
+  responsibilities: string[];
 }

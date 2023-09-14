@@ -6,19 +6,15 @@ import CardTag from '@/components/shared/atoms/card-tag';
 import { IconChevronRight } from '@tabler/icons-react';
 import { defaultImages } from '@/components/shared/utils/constants';
 import { formattedDate } from '@/components/shared/utils/helpers';
+import TechPreview from '@/components/projects/atoms/tech-preview';
 
 const CompactCard: React.FC<{
   type: TopicTagEnum;
   data: Partial<CardProps>;
 }> = ({ type, data }) => {
-  const imageClassName = {
-    'opacity-100': data.logo?.src
-  };
-  // En lugar del logo colocar una transición de las tecnologías usadas, estas deben estar cómo imagenes
-
   if (type === TopicTagEnum.Projects) {
     return (
-      <div className="flex flex-row w-64 gap-2 p-3 border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10">
+      <div className="flex flex-row w-64 gap-2 p-3 transition-all duration-300 ease-in-out border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10 hover:border-cd-gray/40 focus-within:border-cd-gray/40">
         <div className="flex flex-col w-auto gap-3">
           <div className="flex justify-between">
             <div className="flex flex-col">
@@ -29,19 +25,7 @@ const CompactCard: React.FC<{
                 {data.title}
               </h1>
             </div>
-            <div
-              className={cn(
-                'flex items-center justify-center opacity-30',
-                imageClassName
-              )}
-            >
-              <Image
-                width={30}
-                height={30}
-                src={data.logo?.src || defaultImages.logo.src}
-                alt={data.logo?.alt || defaultImages.logo.alt}
-              />
-            </div>
+            <TechPreview icon={data.technologies ? data.technologies : []} />
           </div>
           <p className="text-xs text-cd-gray line-clamp-2">
             {data.description}

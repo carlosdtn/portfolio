@@ -22,10 +22,24 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
       }
     ],
-    logo: {
-      src: '',
-      alt: 'Project logo'
-    },
+    technologies: [
+      {
+        name: 'React',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: 'vscode-icons:file-type-tailwind'
+      }
+    ],
     image: {
       src: '',
       alt: 'Project 1'
@@ -51,10 +65,24 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
       }
     ],
-    logo: {
-      src: '',
-      alt: 'Project logo'
-    },
+    technologies: [
+      {
+        name: 'React',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: 'vscode-icons:file-type-tailwind'
+      }
+    ],
     image: {
       src: 'https://picsum.photos/200/300',
       alt: 'Project 1'
@@ -80,10 +108,24 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
       }
     ],
-    logo: {
-      src: 'https://picsum.photos/200',
-      alt: 'Project logo'
-    },
+    technologies: [
+      {
+        name: 'React',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: 'vscode-icons:file-type-tailwind'
+      }
+    ],
     image: {
       src: 'https://picsum.photos/200/300',
       alt: 'Project 1'
@@ -109,10 +151,7 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
       }
     ],
-    logo: {
-      src: 'https://picsum.photos/200',
-      alt: 'Project logo'
-    },
+    technologies: [],
     image: {
       src: 'https://picsum.photos/200/300',
       alt: 'Project 1'

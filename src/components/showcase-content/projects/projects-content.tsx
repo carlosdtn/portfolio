@@ -1,7 +1,7 @@
 import { projectData } from '@/data';
-import ShowcaseProjectCard from '../projects/molecules/showcase-project-card';
+import ShowcaseProjectCard from '../../projects/molecules/showcase-project-card';
 
-const ShowcaseProjectContent = () => {
+const ProjectContent = () => {
   return (
     <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
       {projectData.map((project) => (
@@ -11,4 +11,4 @@ const ShowcaseProjectContent = () => {
   );
 };
 
-export default ShowcaseProjectContent;
+export default ProjectContent;

@@ -1,6 +1,6 @@
-import ShowcasePostContent from '@/components/render-content/showcase-post-content';
 import ShowcaseSection from '@/components/shared/organisms/showcase.section';
 import { ShowcaseTypeEnum } from '@/components/shared/types/types';
+import PostContent from '@/components/showcase-content/posts/posts-content';
 
 export default function PostPage() {
   return (
@@ -9,7 +9,7 @@ export default function PostPage() {
         <ShowcaseSection
           title="Posts"
           contentType={ShowcaseTypeEnum.Blog}
-          renderContent={<ShowcasePostContent />}
+          renderContent={<PostContent />}
         />
       </main>
     </div>

@@ -1,16 +1,15 @@
 import { CardProps } from '@/components/shared/types/types';
-import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { IconChevronRight } from '@tabler/icons-react';
+import Link from 'next/link';
 import CardTag from '../atoms/card-tag';
 import { formattedDate } from '../utils/helpers';
-import Link from 'next/link';
 
 const PostCard: React.FC<{
   data: Partial<CardProps>;
 }> = ({ data }) => {
   return (
-    <div className="flex flex-row items-center justify-between w-full p-3 border rounded-md cursor-pointer select-none group bg-cd-dark-gray/20 border-cd-gray/10">
+    <div className="flex flex-row items-center justify-between w-full p-3 transition-all duration-300 ease-in-out border rounded-md select-none group bg-cd-dark-gray/20 border-cd-gray/10 hover:border-cd-gray/40 focus-within:border-cd-gray/40">
       <div className="flex flex-col gap-1">
         <h1 className="font-bold leading-tight line-clamp-1">{data.title}</h1>
         <p className="text-xs text-cd-gray line-clamp-2">{data.description}</p>

@@ -1,9 +1,8 @@
 import { Button } from '@/components/ui/button';
-import React from 'react';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandTwitter
+  IconBrandX
 } from '@tabler/icons-react';
 
 const PersonalInfoSection = () => {
@@ -36,7 +35,7 @@ const PersonalInfoSection = () => {
             <IconBrandLinkedin />
           </a>
           <a href="https://github.com/carlosdtn" target="_blank">
-            <IconBrandTwitter />
+            <IconBrandX />
           </a>
         </div>
       </div>

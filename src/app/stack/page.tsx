@@ -1,6 +1,6 @@
-import ShowcaseStackContent from '@/components/render-content/showcase-stack-content';
 import ShowcaseSection from '@/components/shared/organisms/showcase.section';
 import { ShowcaseTypeEnum } from '@/components/shared/types/types';
+import StackContent from '@/components/showcase-content/stack/stack-content';
 
 export default function StackPage() {
   return (
@@ -9,17 +9,17 @@ export default function StackPage() {
         <ShowcaseSection
           title="Current Expertise"
           contentType={ShowcaseTypeEnum.Stack}
-          renderContent={<ShowcaseStackContent stackType="current" />}
+          renderContent={<StackContent stackType="current" />}
         />
         <ShowcaseSection
           title="Continuous Learning"
           contentType={ShowcaseTypeEnum.Stack}
-          renderContent={<ShowcaseStackContent stackType="learning" />}
+          renderContent={<StackContent stackType="learning" />}
         />
         <ShowcaseSection
           title="Future Planning"
           contentType={ShowcaseTypeEnum.Stack}
-          renderContent={<ShowcaseStackContent stackType="planning" />}
+          renderContent={<StackContent stackType="planning" />}
         />
       </main>
     </div>

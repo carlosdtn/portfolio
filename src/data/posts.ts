@@ -2,7 +2,7 @@ import { CardProps } from '@/components/shared/types/types';
 
 export const postsData: Omit<
   CardProps,
-  'resources' | 'year' | 'image' | 'logo'
+  'resources' | 'year' | 'image' | 'technologies'
 >[] = [
   {
     id: 1,

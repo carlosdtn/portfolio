@@ -1,6 +1,6 @@
-import { StackProps } from '@/components/shared/types/types';
+import { stackProps } from '@/components/shared/types/types';
 
-export const StackData: StackProps = {
+export const stackData: stackProps = {
   current: [
     {
       name: 'React',
@@ -65,6 +65,10 @@ export const StackData: StackProps = {
     {
       name: 'Ionic',
       icon: 'logos:ionic-icon'
+    },
+    {
+      name: 'PHP',
+      icon: 'logos:php'
     }
   ]
 };

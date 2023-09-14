@@ -16,7 +16,7 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
-  const [prevScrollLeft, setPrevScrollLeft] = useState<number>(0);
+  // const [prevScrollLeft, setPrevScrollLeft] = useState<number>(0);
 
   const getCardDimensions = () => {
     const fontSize: number = 16;
@@ -34,9 +34,9 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
         carrouselContainer.scrollLeft <
           carrouselContainer.scrollWidth - carrouselContainer.clientWidth
       );
-      const currentScrollLeft = carrouselContainer.scrollLeft;
-      if (currentScrollLeft > prevScrollLeft) {
-      }
+      // const currentScrollLeft = carrouselContainer.scrollLeft;
+      // if (currentScrollLeft > prevScrollLeft) {
+      // }
     }
   };
 

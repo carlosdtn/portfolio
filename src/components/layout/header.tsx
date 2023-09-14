@@ -30,9 +30,9 @@ const Header = () => {
           <Button type="button" variant="icon" size="icon">
             <IconSunHigh width={18} />
           </Button>
-          <Button type="button" variant="icon" size="icon">
+          {/* <Button type="button" variant="icon" size="icon">
             <IconWorld width={18} />
-          </Button>
+          </Button> */}
           <Button type="button" variant="default" size="default">
             Contact
           </Button>

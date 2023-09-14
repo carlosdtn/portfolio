@@ -1,5 +1,6 @@
 import { projectData } from './projects';
 import { postsData } from './posts';
-import { StackData } from './stack';
+import { stackData } from './stack';
+import { workExperienceData } from './work-experience';
 
-export { projectData, postsData, StackData };
+export { projectData, postsData, stackData, workExperienceData };
