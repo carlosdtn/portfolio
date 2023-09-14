@@ -104,7 +104,6 @@ html {
       background-position: 0% 50%;
     }
   }
-
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

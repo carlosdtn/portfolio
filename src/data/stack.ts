@@ -31,7 +31,7 @@ export const stackData: stackProps = {
       icon: 'devicon:csharp'
     },
     {
-      name: 'SQLServer',
+      name: 'SQL Server',
       icon: 'simple-icons:microsoftsqlserver'
     }
   ],
