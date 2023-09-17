@@ -1,12 +1,9 @@
 import { TopicTagEnum } from '@/components/home/atoms/types/types';
-import { CardProps } from '@/components/shared/types/types';
-import { cn } from '@/lib/utils';
-import Image from 'next/image';
-import CardTag from '@/components/shared/atoms/card-tag';
-import { IconChevronRight } from '@tabler/icons-react';
-import { defaultImages } from '@/components/shared/utils/constants';
-import { formattedDate } from '@/components/shared/utils/helpers';
 import TechPreview from '@/components/projects/atoms/tech-preview';
+import CardTag from '@/components/shared/atoms/card-tag';
+import { CardProps } from '@/components/shared/types/types';
+import { formattedDate } from '@/components/shared/utils/helpers';
+import { IconChevronRight } from '@tabler/icons-react';
 
 const CompactCard: React.FC<{
   type: TopicTagEnum;

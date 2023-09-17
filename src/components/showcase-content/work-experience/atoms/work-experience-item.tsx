@@ -30,6 +30,9 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
     <li className="relative flex gap-4 group">
       <div className="absolute h-full border-l border-dashed left-[1.21rem] top-4 border-white/40 group-last:border-none" />
       <BadgeClass type={data.workType} />
+      <span className="hidden absolute px-1 text-xs font-semibold text-black rounded-sm top-12 group-first-of-type:block bg-amber-300 shadow-md animate-pulse shadow-amber-200 -left-[0.3rem]">
+        current
+      </span>
       <div className="flex flex-col items-start gap-2">
         <div className="flex items-center justify-center gap-2">
           <div className="flex items-center justify-center w-8 h-8 border rounded-sm border-cd-gray/30">
