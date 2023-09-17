@@ -10,12 +10,7 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: [
-    'next/babel',
-    'next/core-web-vitals',
-    'plugin:react/recommended',
-    'standard'
-  ],
+  extends: ['next', 'next/core-web-vitals', 'prettier'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
