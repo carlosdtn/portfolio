@@ -51,6 +51,10 @@ export const stackData: stackProps = {
     {
       name: 'MongoDB',
       icon: 'vscode-icons:file-type-mongo'
+    },
+    {
+      name: 'WordPress',
+      icon: 'ion:logo-wordpress'
     }
   ],
   planning: [

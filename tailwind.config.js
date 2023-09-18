@@ -88,5 +88,13 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [
+    require('tailwindcss-animate'),
+    function ({ addVariant }) {
+      addVariant('child', '& > li > *');
+      addVariant('child-hover', '& > li > *:hover');
+      addVariant('child-focus', '& > li > *:focus-visible');
+      addVariant('a-child-focus', '& > a:focus-visible');
+    }
+  ]
 };

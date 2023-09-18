@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const ShowcaseProjectCard = ({ data }: { data: Partial<CardProps> }) => {
   return (
-    <div className="flex flex-col w-full gap-2 p-3 transition-all duration-300 ease-in-out border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10 hover:border-cd-gray/40 focus-within:border-cd-gray/40">
+    <div className="flex flex-col w-full h-[17rem] lg:h-auto gap-2 p-3 transition-all duration-300 ease-in-out border rounded-md select-none bg-cd-dark-gray/20 border-cd-gray/10 hover:border-cd-gray/40 focus-within:border-cd-gray/40">
       <Image
-        className="relative object-cover w-full border rounded-md h-28 border-cd-gray/10"
+        className="relative object-cover w-full border rounded-md lg:h-28 border-cd-gray/10 h-[9rem]"
         width={90}
         height={90}
         src={data.image?.src || defaultImages.image.src}
@@ -20,7 +20,7 @@ const ShowcaseProjectCard = ({ data }: { data: Partial<CardProps> }) => {
       <p className="text-xs text-cd-gray line-clamp-2">{data.description}</p>
       <div className="flex flex-wrap gap-2">
         {data.resources?.map((resource, index) => (
-          <CardTag key={index} toPath={resource.link} isExternal>
+          <CardTag key={index} toPath={resource.link}>
             {resource.category}
           </CardTag>
         ))}

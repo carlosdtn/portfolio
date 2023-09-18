@@ -8,8 +8,8 @@ import {
 export default function HomePage() {
   return (
     <div className="flex flex-row justify-center">
-      <main className="w-[42%] mt-16 flex flex-col gap-16 mb-16">
-        <div className="flex w-full gap-4">
+      <main className="w-[90%] md:w-[80%] lg:w-[50.15rem] flex flex-col gap-12 md:gap-16 my-12 md:my-16">
+        <div className="flex flex-col w-full gap-4 md:flex-row">
           <PersonalInfoSection />
           <CanvasSection />
         </div>

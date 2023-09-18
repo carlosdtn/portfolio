@@ -29,7 +29,7 @@ const CompactCard: React.FC<{
           </p>
           <div className="flex gap-2">
             {data.resources?.map((resource, index) => (
-              <CardTag key={index} toPath={resource.link} isExternal>
+              <CardTag key={index} toPath={resource.link}>
                 {resource.category}
               </CardTag>
             ))}

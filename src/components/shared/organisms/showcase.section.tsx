@@ -13,12 +13,16 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
   renderContent
 }) => {
   return (
-    <section className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">{title}</h1>
+    <section className="flex flex-col w-full gap-4">
+      <div className="flex items-center justify-between rounded">
+        <h1 className="text-2xl font-bold leading-tight">{title}</h1>
         {(contentType === ShowcaseTypeEnum.Project ||
           contentType === ShowcaseTypeEnum.Blog) && (
-          <Button variant="text" size="text">
+          <Button
+            variant="text"
+            size="text"
+            className="px-2 hover:bg-cd-light-blue/10"
+          >
             Filter
           </Button>
         )}

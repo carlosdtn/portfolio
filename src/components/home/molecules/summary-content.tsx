@@ -106,7 +106,7 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
   if (type === TopicTagEnum.Projects)
     return (
       <div className="relative flex flex-row h-auto transition-transform duration-300 ease-in-out">
-        <div className="absolute flex items-center h-full -left-12">
+        <div className="absolute items-center hidden h-full md:flex -left-12">
           <Button
             className={cn('px-2 py-1', visibleButtonClassName.left)}
             onClick={scrollLeft}
@@ -124,7 +124,7 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
             <CompactCard key={project.id} type={type} data={project} />
           ))}
         </div>
-        <div className="absolute flex items-center h-full -right-12">
+        <div className="absolute items-center hidden h-full md:flex -right-12">
           <Button
             className={cn('px-2 py-1', visibleButtonClassName.right)}
             onClick={scrollRight}
