@@ -13,9 +13,16 @@ export const workExperienceData: WorkExperienceProps[] = [
       src: '/company-logo/cinfo-unmsm.png',
       alt: 'CINFO UNMSM logo'
     },
-    startDate: '01-01-2021',
-    endDate: '01-01-2022',
-    responsibilities: ['Function 1', 'Function 2', 'Function 3']
+    startDate: '04-03-2022',
+    endDate: '10-31-2022',
+    responsibilities: [
+      'Administration and maintenance of the CINFO UNMSM website, developed in WordPress.',
+      'Configuration, diagnosis, and repair of computer equipment and peripherals.',
+      'Monitoring of the SGD (Document Management System)',
+      'Providing remote technical support to users of the Moodle',
+      'Remote coordination with administrative personnel for assigned functions and tasks.',
+      'Conducted training sessions on Moodle usage for both faculty and students.'
+    ]
   },
   {
     id: 2,
@@ -26,8 +33,8 @@ export const workExperienceData: WorkExperienceProps[] = [
       src: '/company-logo/ibt-group.png',
       alt: 'IBT Group logo'
     },
-    startDate: '01-01-2021',
-    endDate: '01-01-2022',
+    startDate: '12-05-2022',
+    endDate: '05-31-2023',
     responsibilities: [
       'Perform functional configurations of applications integrated into the HR system.',
       'Provide support for applications and systems in the HR department.',
@@ -47,8 +54,18 @@ export const workExperienceData: WorkExperienceProps[] = [
       src: '/company-logo/memora-date.png',
       alt: 'Memora Date logo'
     },
-    startDate: '01-01-2021',
-    endDate: '01-01-2022',
-    responsibilities: ['Function 1', 'Function 2', 'Function 3']
+    startDate: '06-22-2023',
+    endDate: '09-04-2022',
+    responsibilities: [
+      'Implemented front-end form validation for registration and login forms.',
+      'Designed and styled notification (toast) components.',
+      'Added loading animations to form submission buttons.',
+      'Integrated a navigation-enhanced sidebar with the company logo.',
+      'Designed and integrated user profiles.',
+      'Implemented icons to support Progressive Web App (PWA) functionality.',
+      'Reviewed and refined contact schema.',
+      'Enabled user profile image editing functionality.',
+      "Introduced 'loading.tsx' to the 'Profile' page to enhance loading and rendering efficiency."
+    ]
   }
 ];

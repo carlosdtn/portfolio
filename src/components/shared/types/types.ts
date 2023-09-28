@@ -19,7 +19,6 @@ export type ResourceType = {
 
 export interface CardProps {
   id: number;
-  year: number;
   title: string;
   description: string;
   resources: ResourceType[];

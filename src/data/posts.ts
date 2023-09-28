@@ -6,26 +6,9 @@ export const postsData: Omit<
 >[] = [
   {
     id: 1,
-    title: 'Post 1',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    tags: ['tag1', 'tag2', 'tag3'],
-    date: '2021-01-01'
-  },
-  {
-    id: 2,
-    title: 'Post 2',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    tags: ['tag1', 'tag2', 'tag3'],
-    date: '2021-01-01'
-  },
-  {
-    id: 3,
-    title: 'Post 3',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    tags: ['tag1', 'tag2', 'tag3'],
-    date: '2021-01-01'
+    title: 'Test Post',
+    description: 'Test post description. Lorem ipsum dolor sit amet.',
+    tags: ['React', 'Next.js', 'Typescript'],
+    date: '04-03-2022'
   }
 ];

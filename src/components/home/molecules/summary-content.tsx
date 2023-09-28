@@ -120,9 +120,14 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
           ref={containerRef}
           className="inline-grid w-full grid-flow-col gap-4 overflow-x-auto no-scrollbar"
         >
-          {projectData.map((project) => (
-            <CompactCard key={project.id} type={type} data={project} />
-          ))}
+          {projectData
+            .sort((a, b) => {
+              return new Date(b.date).getTime() - new Date(a.date).getTime();
+            })
+            .slice(0, 4)
+            .map((project) => (
+              <CompactCard key={project.id} type={type} data={project} />
+            ))}
         </div>
         <div className="absolute items-center hidden h-full md:flex -right-12">
           <Button
@@ -139,7 +144,7 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
   if (type === TopicTagEnum.Blog)
     return (
       <div className="flex flex-col w-full gap-3">
-        {postsData.map((post) => (
+        {postsData.slice(0, 3).map((post) => (
           <PostCard key={post.id} data={post} />
         ))}
       </div>

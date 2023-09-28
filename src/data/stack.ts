@@ -41,6 +41,10 @@ export const stackData: stackProps = {
       icon: 'logos:angular-icon'
     },
     {
+      name: 'Astro',
+      icon: 'devicon:astro'
+    },
+    {
       name: 'Redux',
       icon: 'logos:redux'
     },

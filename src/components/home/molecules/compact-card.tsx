@@ -16,7 +16,7 @@ const CompactCard: React.FC<{
           <div className="flex justify-between">
             <div className="flex flex-col">
               <span className="text-xs leading-tight text-cd-light-blue">
-                {data.year}
+                {formattedDate(data.date).year}
               </span>
               <h1 className="font-bold leading-tight line-clamp-1">
                 {data.title}

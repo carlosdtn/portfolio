@@ -8,5 +8,10 @@ export const formattedDate = (date: string | undefined) => {
         month: 'short'
       })
     };
+  } else {
+    return {
+      year: 'N/D',
+      month: 'N/D'
+    };
   }
 };

@@ -9,23 +9,15 @@ const AboutMeContent = () => {
           <AvatarFallback>CT</AvatarFallback>
         </Avatar>
         <div>
-          <h1 className="font-bold text-white">
-            That's me, Carlos Tarmeno, a software engineer.
-          </h1>
+          <h1 className="font-bold text-white">That's me, Carlos Tarmeno</h1>
           <p className="text-sm text-cd-gray">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            repellendus, voluptatem quos, officiis, quas voluptatum dolorum
-            voluptate quia doloribus ipsam doloremque. Quisquam repellendus.
+            I am a student of Software Engineering at the National University of
+            San Marcos, currently in my tenth semester. I am someone who seeks
+            new challenges, self-motivated, proactive, responsible, and eager to
+            expand my knowledge as a Front-end web developer.
           </p>
         </div>
       </div>
-      {/* <div className="flex justify-start w-full gap-2">
-        <h1 className="font-bold text-white">My hobbies {'->'}</h1>
-        <ul className="flex gap-3">
-          <li>Item 1</li>
-          <li>Item 2</li>
-        </ul>
-      </div> */}
     </div>
   );
 };

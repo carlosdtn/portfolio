@@ -1,18 +1,14 @@
 import { CardProps } from '@/components/shared/types/types';
 import { ResourceTypeEnum } from '@/data/types/types';
 
-export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
+export const projectData: Omit<CardProps, 'tags'>[] = [
   {
     id: 1,
-    year: 2019,
-    title: 'Project 1',
+    date: '02-01-2022',
+    title: 'Next Quote Generator',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      'A quote generator was developed, interfacing with the Quote Garden API.',
     resources: [
-      {
-        category: ResourceTypeEnum.Article,
-        link: '/articles/1'
-      },
       {
         category: ResourceTypeEnum.Demo,
         link: 'https://next-quote-generator.vercel.app/'
@@ -32,8 +28,8 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         icon: 'logos:nextjs-icon'
       },
       {
-        name: 'TypeScript',
-        icon: 'devicon:typescript'
+        name: 'Javascript',
+        icon: 'devicon:javascript'
       },
       {
         name: 'Tailwind CSS',
@@ -41,25 +37,17 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
       }
     ],
     image: {
-      src: '',
-      alt: 'Project 1'
+      src: '/images/projects/next-quote-generator.png',
+      alt: 'Next Quote Generator'
     }
   },
   {
     id: 2,
-    year: 2018,
-    title: 'Project 2',
+    date: '10-15-2022',
+    title: 'Country Quiz',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+      'Using the Rest Country API to create a knowledge quiz about countries.',
     resources: [
-      {
-        category: ResourceTypeEnum.Article,
-        link: 'URL_del_artículo'
-      },
-      {
-        category: ResourceTypeEnum.Demo,
-        link: 'https://next-quote-generator.vercel.app/'
-      },
       {
         category: ResourceTypeEnum.Source,
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
@@ -71,41 +59,32 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         icon: 'devicon:react'
       },
       {
-        name: 'Next.js',
-        icon: 'logos:nextjs-icon'
+        name: 'Vite.js',
+        icon: 'vscode-icons:file-type-vite'
       },
       {
         name: 'TypeScript',
         icon: 'devicon:typescript'
       },
       {
-        name: 'Tailwind CSS',
-        icon: 'vscode-icons:file-type-tailwind'
+        name: 'Less',
+        icon: 'logos:less'
       }
     ],
     image: {
-      src: 'https://picsum.photos/200/300',
-      alt: 'Project 1'
+      src: '/images/projects/country-quiz-ts.png',
+      alt: 'Country Quiz'
     }
   },
   {
     id: 3,
-    year: 2017,
-    title: 'Project 3',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    date: '05-02-2023',
+    title: 'Next Query',
+    description: 'SQL Server employee query system development project',
     resources: [
       {
-        category: ResourceTypeEnum.Article,
-        link: 'URL_del_artículo'
-      },
-      {
-        category: ResourceTypeEnum.Demo,
-        link: 'https://next-quote-generator.vercel.app/'
-      },
-      {
         category: ResourceTypeEnum.Source,
-        link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
+        link: 'https://github.com/carlosdtn/next-query'
       }
     ],
     technologies: [
@@ -122,39 +101,64 @@ export const projectData: Omit<CardProps, 'tags' | 'date'>[] = [
         icon: 'devicon:typescript'
       },
       {
+        name: 'SQL Server',
+        icon: 'simple-icons:microsoftsqlserver'
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: 'vscode-icons:file-type-tailwind'
+      },
+      {
+        name: 'Sequelize',
+        icon: 'logos:sequelize'
+      }
+    ],
+    image: {
+      src: '/images/projects/next-query.png',
+      alt: 'Next Query'
+    }
+  },
+  {
+    id: 4,
+    date: '07-22-2023',
+    title: 'Memora Date',
+    description:
+      'A collaborative effort with peers to create a web-based reminder-setting tool that sends notifications via messages or email.',
+    resources: [
+      {
+        category: ResourceTypeEnum.Demo,
+        link: 'https://memora-date.vercel.app/'
+      },
+      {
+        category: ResourceTypeEnum.Source,
+        link: 'https://github.com/Railly/memora-date'
+      }
+    ],
+    technologies: [
+      {
+        name: 'React',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Supabase',
+        icon: 'devicon:supabase'
+      },
+      {
         name: 'Tailwind CSS',
         icon: 'vscode-icons:file-type-tailwind'
       }
     ],
     image: {
-      src: 'https://picsum.photos/200/300',
-      alt: 'Project 1'
-    }
-  },
-  {
-    id: 4,
-    year: 2016,
-    title: 'Project 4',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    resources: [
-      {
-        category: ResourceTypeEnum.Article,
-        link: 'URL_del_artículo'
-      },
-      {
-        category: ResourceTypeEnum.Demo,
-        link: 'https://next-quote-generator.vercel.app/'
-      },
-      {
-        category: ResourceTypeEnum.Source,
-        link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
-      }
-    ],
-    technologies: [],
-    image: {
-      src: 'https://picsum.photos/200/300',
-      alt: 'Project 1'
+      src: '/images/projects/memora-date.png',
+      alt: 'Memora Date'
     }
   }
 ];
