@@ -22,13 +22,13 @@ const Footer = () => {
             <Link href="/stack">Stack</Link>
           </li>
           <li>
-            <a href="">GitHub</a>
+            <a href="https://github.com/carlosdtn">GitHub</a>
           </li>
           <li>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/carlos-tarmeno/">LinkedIn</a>
           </li>
           <li>
-            <a href="">Twitter</a>
+            <a href="https://twitter.com/danielsec_">Twitter</a>
           </li>
         </ul>
       </div>

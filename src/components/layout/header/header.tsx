@@ -2,15 +2,16 @@
 import Logo from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { IconSunHigh, IconWorld, IconMenu2 } from '@tabler/icons-react';
+import { IconMenu2, IconSunHigh, IconWorld } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ContactForm from './molecules/contact-form';
 
 const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-10 flex flex-row items-center justify-center w-full py-3 border-b backdrop-blur-md bg-cd-dark-blue/60 h-14 border-cd-gray/10">
+    <header className="sticky top-0 z-10 flex flex-row items-center justify-center w-full py-3 border-b backdrop-blur-md bg-cd-dark-blue/60 h-14 border-cd-gray/20">
       <div className="flex flex-row w-[90%] md:w-[80%] lg:w-[50.15rem] justify-between">
         <Link
           href="/"
@@ -68,15 +69,13 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2">
           <div className="flex-row items-center hidden gap-2 md:flex">
-            <Button type="button" variant="icon" size="icon">
+            {/* <Button type="button" variant="icon" size="icon">
               <IconSunHigh width={18} />
             </Button>
             <Button type="button" variant="icon" size="icon">
               <IconWorld width={18} />
-            </Button>
-            <Button type="button" variant="default" size="default">
-              Contact
-            </Button>
+            </Button> */}
+            <ContactForm />
           </div>
           <div className="flex transition duration-300 ease-in-out border rounded-md lg:hidden border-white/20">
             <Button type="button" variant="icon" size="icon">

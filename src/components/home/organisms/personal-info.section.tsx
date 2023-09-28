@@ -38,7 +38,7 @@ const PersonalInfoSection = () => {
           <a href="https://www.linkedin.com/in/carlos-tarmeno/" target="_blank">
             <IconBrandLinkedin />
           </a>
-          <a href="https://github.com/carlosdtn" target="_blank">
+          <a href="https://twitter.com/danielsec_" target="_blank">
             <IconBrandX />
           </a>
         </div>
