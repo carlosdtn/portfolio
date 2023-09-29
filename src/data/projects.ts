@@ -37,7 +37,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       }
     ],
     image: {
-      src: '/images/projects/next-quote-generator.png',
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695952306/projects-image/fvjyrnvcmbl11cm8g8mf.png',
       alt: 'Next Quote Generator'
     }
   },
@@ -72,7 +72,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       }
     ],
     image: {
-      src: '/images/projects/country-quiz-ts.png',
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695952306/projects-image/ikqyqzvrabxowoccwm1t.png',
       alt: 'Country Quiz'
     }
   },
@@ -114,7 +114,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       }
     ],
     image: {
-      src: '/images/projects/next-query.png',
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695952306/projects-image/yw892glutxb0vkjcnwjf.png',
       alt: 'Next Query'
     }
   },
@@ -157,7 +157,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       }
     ],
     image: {
-      src: '/images/projects/memora-date.png',
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695952306/projects-image/q3perdbygmgrwfkexvdl.png',
       alt: 'Memora Date'
     }
   }
