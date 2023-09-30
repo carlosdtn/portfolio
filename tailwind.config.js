@@ -85,6 +85,9 @@ module.exports = {
       },
       backgroundSize: {
         '300%': '300%'
+      },
+      boxShadow: {
+        'cd-menu': '0px 0px 5px 12px rgba(32,189,255,1) inset'
       }
     }
   },

@@ -6,6 +6,10 @@
   scrollbar-gutter: stable;
 } */
 
+:root {
+  color-scheme: light dark;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -122,5 +126,27 @@
     );
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     box-shadow: 0 0 10px rgba(16, 233, 8, 0.5);
+  }
+}
+
+#dots::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-image: url('/bluedots.png');
+  background-repeat: repeat;
+  background-blend-mode: soft-light;
+  background-size: 70%;
+  z-index: -99;
+  opacity: 3%;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+@media (width <=400px) {
+  #dots::before {
+    background-size: 150%;
   }
 }

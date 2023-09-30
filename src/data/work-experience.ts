@@ -62,10 +62,9 @@ export const workExperienceData: WorkExperienceProps[] = [
       'Added loading animations to form submission buttons.',
       'Integrated a navigation-enhanced sidebar with the company logo.',
       'Designed and integrated user profiles.',
-      'Implemented icons to support Progressive Web App (PWA) functionality.',
+      'Improved Progressive Web App (PWA) functionality to enhance user experience.',
       'Reviewed and refined contact schema.',
-      'Enabled user profile image editing functionality.',
-      "Introduced 'loading.tsx' to the 'Profile' page to enhance loading and rendering efficiency."
+      'Enabled user profile image editing functionality.'
     ]
   }
 ];

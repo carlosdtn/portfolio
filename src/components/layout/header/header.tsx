@@ -1,11 +1,13 @@
 'use client';
+import SocialNetWorks from '@/components/home/atoms/social-networks';
 import Logo from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { IconMenu2, IconSunHigh, IconWorld } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import ContactForm from './molecules/contact-form';
+import HeaderLinkOptions from './molecules/header-link-options';
 
 const Header = () => {
   const pathname = usePathname();
@@ -19,68 +21,54 @@ const Header = () => {
         >
           <Logo className="w-10 h-10 transition duration-300 ease-in-out" />
         </Link>
+        {/* Desktop Navigation Options */}
         <nav className="items-center hidden text-sm lg:flex text-cd-gray">
-          <ul className="flex gap-12 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
-            <li>
-              <Link
-                className={cn({
-                  'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                    pathname === '/about'
-                })}
-                href="/about"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={cn({
-                  'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                    pathname === '/projects'
-                })}
-                href="/projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={cn({
-                  'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                    pathname === '/posts'
-                })}
-                href="/posts"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={cn({
-                  'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                    pathname === '/stack'
-                })}
-                href="/stack"
-              >
-                Stack
-              </Link>
-            </li>
-          </ul>
+          <HeaderLinkOptions pathname={pathname} />
         </nav>
         <div className="flex items-center gap-2">
+          {/* Options & Contact Button */}
           <div className="flex-row items-center hidden gap-2 md:flex">
-            {/* <Button type="button" variant="icon" size="icon">
+            <Button type="button" variant="icon" size="icon">
               <IconSunHigh width={18} />
             </Button>
             <Button type="button" variant="icon" size="icon">
               <IconWorld width={18} />
-            </Button> */}
+            </Button>
             <ContactForm />
           </div>
-          <div className="flex transition duration-300 ease-in-out border rounded-md lg:hidden border-white/20">
-            <Button type="button" variant="icon" size="icon">
-              <IconMenu2 width={18} />
-            </Button>
+          {/* Responsive Menu */}
+          <div className="flex transition duration-300 ease-in-out rounded-md lg:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button
+                  type="button"
+                  variant="icon"
+                  size="icon"
+                  className="border border-white/20 hover:bg-cd-light-blue/10"
+                >
+                  <IconMenu2 width={18} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent id="dots">
+                <nav className="flex flex-col items-center justify-center w-full h-full gap-6 px-4 text-sm">
+                  {/* Responsive Navigation Options */}
+                  <HeaderLinkOptions pathname={pathname} withinMenu />
+                  <ContactForm />
+                </nav>
+                {/* My Social Networks */}
+                <div className="absolute flex flex-col gap-3 top-5 left-5 text-">
+                  <Button type="button" variant="icon" size="icon">
+                    <IconSunHigh size={22} />
+                  </Button>
+                  <Button type="button" variant="icon" size="icon">
+                    <IconWorld size={22} />
+                  </Button>
+                </div>
+                <div className="absolute flex flex-col gap-4 bottom-5 left-6">
+                  <SocialNetWorks />
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>

@@ -1,10 +1,5 @@
-import { Button } from '@/components/ui/button';
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandX
-} from '@tabler/icons-react';
 import Link from 'next/link';
+import SocialNetWorks from '../atoms/social-networks';
 
 const PersonalInfoSection = () => {
   return (
@@ -32,15 +27,7 @@ const PersonalInfoSection = () => {
           <span>About me</span>
         </Link>
         <div className="flex items-center gap-4 a-child-focus:rounded-sm md:gap-3 a-child-focus:outline-none a-child-focus:ring-2 a-child-focus:ring-foreground/20">
-          <a href="https://github.com/carlosdtn" target="_blank">
-            <IconBrandGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/carlos-tarmeno/" target="_blank">
-            <IconBrandLinkedin />
-          </a>
-          <a href="https://twitter.com/danielsec_" target="_blank">
-            <IconBrandX />
-          </a>
+          <SocialNetWorks />
         </div>
       </div>
     </section>

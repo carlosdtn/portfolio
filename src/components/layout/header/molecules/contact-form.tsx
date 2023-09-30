@@ -34,8 +34,8 @@ const ContactForm = () => {
             <Input id="name" placeholder="Your name..." />
           </div>
           <div className="flex flex-col items-start gap-4">
-            <Label htmlFor="username">Enterprise</Label>
-            <Input id="enterprise" placeholder="Your enterprise name..." />
+            <Label htmlFor="username">Company</Label>
+            <Input id="company" placeholder="Company name..." />
           </div>
           <div className="flex flex-col items-start gap-4">
             <Label htmlFor="username">Message</Label>
