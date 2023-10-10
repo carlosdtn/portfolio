@@ -22,7 +22,7 @@ const CompactCard: React.FC<{
                 {data.title}
               </h1>
             </div>
-            <TechPreview icon={data.technologies ? data.technologies : []} />
+            <TechPreview icons={data.technologies ? data.technologies : []} />
           </div>
           <p className="text-xs text-cd-gray line-clamp-2">
             {data.description}

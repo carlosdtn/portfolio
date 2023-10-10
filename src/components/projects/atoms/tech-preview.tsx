@@ -2,22 +2,22 @@
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface TechPreviewProps {
-  icon: {
+  icons: {
     name: string;
     icon: string;
   }[];
 }
 
-const TechPreview: React.FC<TechPreviewProps> = ({ icon }) => {
+const TechPreview: React.FC<TechPreviewProps> = ({ icons }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  // const [isFocused, setIsFocused] = useState(false);
 
   const iconShuffle: {
     name: string;
     icon: string;
-  }[] = icon.sort(() => Math.random() - 0.5);
+  }[] = icons.sort(() => Math.random() - 0.5);
 
   const changeIcon = () => {
     setCurrentIndex((prevIndex) =>
@@ -26,20 +26,16 @@ const TechPreview: React.FC<TechPreviewProps> = ({ icon }) => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(changeIcon, 4000 + Math.random() * 1000);
+    const minInterval = 5000;
+    const maxInterval = 7000;
+    const randomInterval =
+      minInterval + Math.random() * (maxInterval - minInterval);
 
+    const intervalId = setInterval(changeIcon, randomInterval);
     return () => {
       clearInterval(intervalId);
     };
   }, []);
-
-  // const handleMouseEnter = () => {
-  //   setIsFocused(true);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsFocused(false);
-  // };
 
   if (!iconShuffle || iconShuffle.length === 0) {
     return (
@@ -55,9 +51,16 @@ const TechPreview: React.FC<TechPreviewProps> = ({ icon }) => {
   }
 
   return (
-    <div className="flex items-center justify-center w-8 opacity-60 group-focus">
+    <motion.div
+      key={iconShuffle[currentIndex].icon}
+      initial={{ scale: 0.5, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ scale: 0.5, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex items-center justify-center w-8 h-8 opacity-60 group-focus"
+    >
       <Icon icon={iconShuffle[currentIndex].icon} width="26" height="26" />
-    </div>
+    </motion.div>
   );
 };
 

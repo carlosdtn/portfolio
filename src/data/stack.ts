@@ -59,6 +59,10 @@ export const stackData: stackProps = {
     {
       name: 'WordPress',
       icon: 'ion:logo-wordpress'
+    },
+    {
+      name: 'Framer Motion',
+      icon: 'devicon:framermotion'
     }
   ],
   planning: [

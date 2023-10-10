@@ -1,7 +1,6 @@
-import { SheetClose } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
+import MenuItem from '../atoms/menu-item';
 import ContactForm from './contact-form';
+import { motion } from 'framer-motion';
 
 interface HeaderLinkOptionsProps {
   pathname: string;
@@ -16,70 +15,17 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
     return (
       <ul className="flex flex-col w-[70%] child:py-2 child:w-full child:text-center items-center gap-4 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
         <li className="w-full">
-          <SheetClose asChild>
-            <Link
-              className={cn({
-                'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                  pathname === '/'
-              })}
-              href="/"
-            >
-              Home
-            </Link>
-          </SheetClose>
+          <MenuItem href="/" pathname={pathname} isMobile>
+            Home
+          </MenuItem>
         </li>
-        <li className="w-full">
-          <SheetClose asChild>
-            <Link
-              className={cn({
-                'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                  pathname === '/about'
-              })}
-              href="/about"
-            >
-              About
-            </Link>
-          </SheetClose>
-        </li>
-        <li className="w-full">
-          <SheetClose asChild>
-            <Link
-              className={cn({
-                'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                  pathname === '/projects'
-              })}
-              href="/projects"
-            >
-              Projects
-            </Link>
-          </SheetClose>
-        </li>
-        <li className="w-full">
-          <SheetClose asChild>
-            <Link
-              className={cn({
-                'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                  pathname === '/posts'
-              })}
-              href="/posts"
-            >
-              Blog
-            </Link>
-          </SheetClose>
-        </li>
-        <li className="w-full">
-          <SheetClose asChild>
-            <Link
-              className={cn({
-                'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-                  pathname === '/stack'
-              })}
-              href="/stack"
-            >
-              Stack
-            </Link>
-          </SheetClose>
-        </li>
+        {navigateOptions.map((option, index) => (
+          <li className="w-full" key={index}>
+            <MenuItem href={option.href} pathname={pathname} isMobile>
+              {option.name}
+            </MenuItem>
+          </li>
+        ))}
         <li className="w-[60%] flex md:hidden">
           <ContactForm />
         </li>
@@ -88,53 +34,35 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
   }
 
   return (
-    <ul className="flex gap-12 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
-      <li>
-        <Link
-          className={cn({
-            'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-              pathname === '/about'
-          })}
-          href="/about"
-        >
-          About
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={cn({
-            'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-              pathname === '/projects'
-          })}
-          href="/projects"
-        >
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={cn({
-            'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-              pathname === '/posts'
-          })}
-          href="/posts"
-        >
-          Blog
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={cn({
-            'text-cd-light-blue font-semibold bg-cd-light-blue/10 p-1 rounded-md border-white/20':
-              pathname === '/stack'
-          })}
-          href="/stack"
-        >
-          Stack
-        </Link>
-      </li>
+    <ul className="relative flex gap-12 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
+      {navigateOptions.map((option, index) => (
+        <li key={index}>
+          <MenuItem href={option.href} pathname={pathname}>
+            {option.name}
+          </MenuItem>
+        </li>
+      ))}
     </ul>
   );
 };
+
+const navigateOptions = [
+  {
+    name: 'About',
+    href: '/about'
+  },
+  {
+    name: 'Projects',
+    href: '/projects'
+  },
+  {
+    name: 'Blog',
+    href: '/posts'
+  },
+  {
+    name: 'Stack',
+    href: '/stack'
+  }
+];
 
 export default HeaderLinkOptions;
