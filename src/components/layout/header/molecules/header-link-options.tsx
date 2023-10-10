@@ -1,6 +1,7 @@
 import { SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import ContactForm from './contact-form';
 
 interface HeaderLinkOptionsProps {
   pathname: string;
@@ -13,8 +14,8 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
 }) => {
   if (withinMenu) {
     return (
-      <ul className="flex flex-col items-center gap-6 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
-        <li>
+      <ul className="flex flex-col w-[70%] child:py-2 child:w-full child:text-center items-center gap-4 child:border-transparent child-hover:text-cd-light-blue child:transition child:duration-300 child:ease-in-out child:border child:rounded-sm child:p-1 text-cd-gray child-focus:border-white/20 child-focus:outline-none">
+        <li className="w-full">
           <SheetClose asChild>
             <Link
               className={cn({
@@ -27,7 +28,7 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
             </Link>
           </SheetClose>
         </li>
-        <li>
+        <li className="w-full">
           <SheetClose asChild>
             <Link
               className={cn({
@@ -40,7 +41,7 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
             </Link>
           </SheetClose>
         </li>
-        <li>
+        <li className="w-full">
           <SheetClose asChild>
             <Link
               className={cn({
@@ -53,7 +54,7 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
             </Link>
           </SheetClose>
         </li>
-        <li>
+        <li className="w-full">
           <SheetClose asChild>
             <Link
               className={cn({
@@ -66,7 +67,7 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
             </Link>
           </SheetClose>
         </li>
-        <li>
+        <li className="w-full">
           <SheetClose asChild>
             <Link
               className={cn({
@@ -78,6 +79,9 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
               Stack
             </Link>
           </SheetClose>
+        </li>
+        <li className="w-[60%] flex md:hidden">
+          <ContactForm />
         </li>
       </ul>
     );

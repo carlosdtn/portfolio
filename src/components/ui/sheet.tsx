@@ -42,7 +42,7 @@ const sheetVariants = cva(
     variants: {
       side: {
         center:
-          'inset-0 w-[85%] md:w-[25rem] h-fit shadow-inner backdrop-blur-md bg-gray-950/50 border border-dark-gray/10 rounded-lg m-auto top-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
+          'inset-0 w-[85%] md:w-[22rem] h-fit shadow-inner backdrop-blur-md bg-gray-950/50 border border-dark-gray/10 rounded-lg m-auto top-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
         top: 'inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
         bottom:
           'inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom',
