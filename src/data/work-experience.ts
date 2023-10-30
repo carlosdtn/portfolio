@@ -55,7 +55,7 @@ export const workExperienceData: WorkExperienceProps[] = [
       alt: 'Memora Date logo'
     },
     startDate: '06-22-2023',
-    endDate: '09-04-2022',
+    endDate: '09-04-2023',
     responsibilities: [
       'Implemented front-end form validation for registration and login forms.',
       'Designed and styled notification (toast) components.',

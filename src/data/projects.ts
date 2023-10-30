@@ -160,5 +160,48 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695952306/projects-image/q3perdbygmgrwfkexvdl.png',
       alt: 'Memora Date'
     }
+  },
+  {
+    id: 5,
+    date: '10-08-2023',
+    title: 'Movie Insights',
+    description:
+      'Frontend Movie Info, Ratings, and Reviews with Next.js, TypeScript, Redux & Tailwind.',
+    resources: [
+      {
+        category: ResourceTypeEnum.Demo,
+        link: 'https://movie-insights.vercel.app/'
+      },
+      {
+        category: ResourceTypeEnum.Source,
+        link: 'https://github.com/carlosdtn/movie-insights'
+      }
+    ],
+    technologies: [
+      {
+        name: 'React',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Next.js',
+        icon: 'logos:nextjs-icon'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Redux',
+        icon: 'logos:redux'
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: 'vscode-icons:file-type-tailwind'
+      }
+    ],
+    image: {
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1698673846/projects-image/pxfxmb2hai9jyiwpd1sp.png',
+      alt: 'Movie Insights'
+    }
   }
 ];
