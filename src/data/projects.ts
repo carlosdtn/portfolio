@@ -49,6 +49,10 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
       'Using the Rest Country API to create a knowledge quiz about countries.',
     resources: [
       {
+        category: ResourceTypeEnum.Demo,
+        link: 'https://country-quiz-ts.vercel.app/'
+      },
+      {
         category: ResourceTypeEnum.Source,
         link: 'https://github.com/carlosdtn/NextQuoteGenerator.git'
       }
@@ -80,7 +84,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
     id: 3,
     date: '05-02-2023',
     title: 'Next Query',
-    description: 'SQL Server employee query system development project',
+    description: 'SQL Server employee query system with Next.js and Sequelize.',
     resources: [
       {
         category: ResourceTypeEnum.Source,

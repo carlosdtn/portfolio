@@ -59,8 +59,7 @@ export const workExperienceData: WorkExperienceProps[] = [
     responsibilities: [
       'Implemented front-end form validation for registration and login forms.',
       'Designed and styled notification (toast) components.',
-      'Added loading animations to form submission buttons.',
-      'Integrated a navigation-enhanced sidebar with the company logo.',
+      'Integrated a navigation-enhanced sidebar.',
       'Designed and integrated user profiles.',
       'Improved Progressive Web App (PWA) functionality to enhance user experience.',
       'Reviewed and refined contact schema.',
