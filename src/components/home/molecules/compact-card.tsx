@@ -4,6 +4,7 @@ import CardTag from '@/components/shared/atoms/card-tag';
 import { CardProps } from '@/components/shared/types/types';
 import { formattedDate } from '@/components/shared/utils/helpers';
 import { IconChevronRight } from '@tabler/icons-react';
+import ProjectInfo from './project-info';
 
 const CompactCard: React.FC<{
   type: TopicTagEnum;
@@ -18,9 +19,12 @@ const CompactCard: React.FC<{
               <span className="text-xs leading-tight text-cd-light-blue">
                 {formattedDate(data.date).year}
               </span>
-              <h1 className="font-bold leading-tight line-clamp-1">
-                {data.title}
-              </h1>
+              <div className="flex flex-row items-center gap-2">
+                <h1 className="font-bold leading-tight line-clamp-1">
+                  {data.title}
+                </h1>
+                <ProjectInfo data={data} isCompact />
+              </div>
             </div>
             <TechPreview icons={data.technologies ? data.technologies : []} />
           </div>

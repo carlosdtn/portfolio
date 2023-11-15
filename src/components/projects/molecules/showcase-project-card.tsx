@@ -4,6 +4,7 @@ import { defaultImages } from '@/components/shared/utils/constants';
 import { formattedDate } from '@/components/shared/utils/helpers';
 import Image from 'next/image';
 import { getBase64 } from '../utils/helpers';
+import ProjectInfo from '@/components/home/molecules/project-info';
 
 async function ShowcaseProjectCard({ data }: { data: Partial<CardProps> }) {
   return (
@@ -22,7 +23,10 @@ async function ShowcaseProjectCard({ data }: { data: Partial<CardProps> }) {
       <span className="m-1 text-xs font-semibold absolute py-[0.1rem] px-[0.3rem] rounded-sm text-cd-light-blue backdrop-blur-lg bg-cd-dark-blue/60">
         {formattedDate(data.date).year}
       </span>
-      <h1 className="font-bold leading-tight line-clamp-1">{data.title}</h1>
+      <div className="flex flex-row items-center gap-2">
+        <h1 className="font-bold leading-tight line-clamp-1">{data.title}</h1>
+        <ProjectInfo data={data} />
+      </div>
       <p className="text-xs text-cd-gray line-clamp-2">{data.description}</p>
       <div className="flex flex-wrap gap-2">
         {data.resources?.map((resource, index) => (

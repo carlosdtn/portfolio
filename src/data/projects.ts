@@ -5,7 +5,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
   {
     id: 1,
     date: '02-01-2022',
-    title: 'Next Quote Generator',
+    title: 'Quote Generator',
     description:
       'A quote generator was developed, interfacing with the Quote Garden API.',
     resources: [
@@ -32,7 +32,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
         icon: 'devicon:javascript'
       },
       {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         icon: 'vscode-icons:file-type-tailwind'
       }
     ],
@@ -63,7 +63,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
         icon: 'devicon:react'
       },
       {
-        name: 'Vite.js',
+        name: 'Vite',
         icon: 'vscode-icons:file-type-vite'
       },
       {
@@ -109,7 +109,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
         icon: 'simple-icons:microsoftsqlserver'
       },
       {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         icon: 'vscode-icons:file-type-tailwind'
       },
       {
@@ -127,7 +127,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
     date: '07-22-2023',
     title: 'Memora Date',
     description:
-      'A collaborative effort with peers to create a web-based reminder-setting tool that sends notifications via messages or email.',
+      'A web-based reminder-setting tool that sends notifications via messages or email.',
     resources: [
       {
         category: ResourceTypeEnum.Demo,
@@ -156,7 +156,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
         icon: 'devicon:supabase'
       },
       {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         icon: 'vscode-icons:file-type-tailwind'
       }
     ],
@@ -170,7 +170,7 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
     date: '10-08-2023',
     title: 'Movie Insights',
     description:
-      'Frontend Movie Info, Ratings, and Reviews with Next.js, TypeScript, Redux & Tailwind.',
+      'A prototype frontend for movie details, ratings, and reviews.',
     resources: [
       {
         category: ResourceTypeEnum.Demo,
@@ -199,13 +199,48 @@ export const projectData: Omit<CardProps, 'tags'>[] = [
         icon: 'logos:redux'
       },
       {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         icon: 'vscode-icons:file-type-tailwind'
       }
     ],
     image: {
       src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1698673846/projects-image/pxfxmb2hai9jyiwpd1sp.png',
       alt: 'Movie Insights'
+    }
+  },
+  {
+    id: 6,
+    date: '09-23-2023',
+    title: 'SmarTerrario',
+    description:
+      'A React Native app for animal environment monitoring with Firebase.',
+    resources: [
+      {
+        category: ResourceTypeEnum.Source,
+        link: 'https://github.com/carlosdtn/smarterrario'
+      }
+    ],
+    technologies: [
+      {
+        name: 'React Native',
+        icon: 'devicon:react'
+      },
+      {
+        name: 'Expo',
+        icon: 'cib:expo'
+      },
+      {
+        name: 'TypeScript',
+        icon: 'devicon:typescript'
+      },
+      {
+        name: 'Firebase',
+        icon: 'vscode-icons:file-type-firebase'
+      }
+    ],
+    image: {
+      src: 'https://res.cloudinary.com/ddwtkjumq/image/upload/v1700029456/projects-image/ccrjgecxwgpz1pp6wjmm.png',
+      alt: 'SmarTerrario'
     }
   }
 ];
