@@ -10,7 +10,7 @@ async function AboutMeContent() {
       <div className="top-0 flex flex-col items-center gap-2 md:flex-row">
         <Image
           src="https://res.cloudinary.com/ddwtkjumq/image/upload/v1695958632/portfolio/wmfwrsyi2upi4jzlessl.jpg"
-          alt="Carlos Tarmeno"
+          alt="Carlos Tarmeño"
           width={80}
           height={80}
           placeholder="blur"
@@ -21,7 +21,7 @@ async function AboutMeContent() {
         />
         <div>
           <h1 className="font-bold text-center text-white md:text-start">
-            That's me, Carlos Tarmeno
+            That's me, Carlos Tarmeño
           </h1>
           <p className="text-sm text-center text-cd-gray md:text-start">
             I am a student of Software Engineering at the National University of

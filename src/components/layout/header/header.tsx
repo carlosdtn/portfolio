@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { IconSunHigh, IconWorld } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import ContactForm from './molecules/contact-form';
+import ContactForm from './molecules/contact-dialog';
 import HeaderLinkOptions from './molecules/header-link-options';
 import MenuSheet from './molecules/menu-sheet';
 

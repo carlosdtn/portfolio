@@ -1,6 +1,5 @@
 import MenuItem from '../atoms/menu-item';
-import ContactForm from './contact-form';
-import { motion } from 'framer-motion';
+import ContactDialog from './contact-dialog';
 
 interface HeaderLinkOptionsProps {
   pathname: string;
@@ -27,7 +26,7 @@ const HeaderLinkOptions: React.FC<HeaderLinkOptionsProps> = ({
           </li>
         ))}
         <li className="w-[60%] flex md:hidden">
-          <ContactForm />
+          <ContactDialog />
         </li>
       </ul>
     );

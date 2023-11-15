@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Carlos Tarmeno - Front-end Developer',
+  title: 'Carlos Tarmeño - Front-end Developer',
   description:
-    "Explore Carlos Tarmeno's portfolio showcasing frontend development expertise."
+    "Explore Carlos Tarmeño's portfolio showcasing frontend development expertise."
 };
 
 export default function RootLayout({
