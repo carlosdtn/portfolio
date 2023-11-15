@@ -1,8 +1,8 @@
 'use client';
 import { Icon } from '@iconify/react';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
 interface TechPreviewProps {
   icons: {
@@ -11,7 +11,7 @@ interface TechPreviewProps {
   }[];
 }
 
-const TechPreview: React.FC<TechPreviewProps> = ({ icons }) => {
+const TechPreview: React.FC<TechPreviewProps> = React.memo(({ icons }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const iconShuffle: {
@@ -26,8 +26,8 @@ const TechPreview: React.FC<TechPreviewProps> = ({ icons }) => {
   };
 
   useEffect(() => {
-    const minInterval = 5000;
-    const maxInterval = 7000;
+    const minInterval = 3000;
+    const maxInterval = 5000;
     const randomInterval =
       minInterval + Math.random() * (maxInterval - minInterval);
 
@@ -44,7 +44,7 @@ const TechPreview: React.FC<TechPreviewProps> = ({ icons }) => {
           src="/porfolio-logo.png"
           width={26}
           height={26}
-          alt="porfolio logo"
+          alt="website logo"
         />
       </div>
     );
@@ -62,6 +62,6 @@ const TechPreview: React.FC<TechPreviewProps> = ({ icons }) => {
       <Icon icon={iconShuffle[currentIndex].icon} width="26" height="26" />
     </motion.div>
   );
-};
+});
 
 export default TechPreview;

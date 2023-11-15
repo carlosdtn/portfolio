@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 
 interface SocialMediaLinkProps {
   href: string;
@@ -36,6 +36,7 @@ const SocialMediaLink = ({
         <Link
           href={href}
           target="_blank"
+          tabIndex={-1}
           className={cn('flex flex-row items-center', isHidden && 'gap-1')}
         >
           {icon}
