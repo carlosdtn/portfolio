@@ -19,7 +19,7 @@ const ContactInformation = () => {
           text="/in/carlos-tarmeno"
         />
         <SocialMediaLink
-          href={SocialNetworksData.github}
+          href={SocialNetworksData.x}
           icon={<IconBrandX size={22} />}
           text="/danielsec_"
         />
@@ -44,7 +44,7 @@ const ContactInformation = () => {
         </p>
         <div className="flex justify-center">
           <SocialMediaLink
-            href={SocialNetworksData.github}
+            href={`${SocialNetworksData.github}/portfolio`}
             icon={<IconBrandGithub size={22} />}
             text="/carlosdtn/portfolio"
           />
