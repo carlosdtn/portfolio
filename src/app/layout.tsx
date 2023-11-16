@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Footer from '@/components/layout/footer';
+import { Analytics } from '@/components/analytics/analytics';
 
 const inter = Inter({
   weight: ['400', '500', '600', '700', '800'],
@@ -28,6 +29,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
