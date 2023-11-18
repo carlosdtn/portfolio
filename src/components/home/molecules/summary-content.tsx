@@ -1,9 +1,10 @@
 'use client';
 import PostCard from '@/components/shared/molecules/post-card';
 import { Button } from '@/components/ui/button';
-import { postsData, projectData } from '@/data/index';
+import { projectData } from '@/data/index';
 import { cn } from '@/lib/utils';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { allPosts } from 'contentlayer/generated';
 import { useEffect, useRef, useState } from 'react';
 import { TopicTagEnum } from '../atoms/types/types';
 import CompactCard from './compact-card';
@@ -146,9 +147,14 @@ const SummaryContent: React.FC<SummaryContentProps> = ({ type }) => {
   if (type === TopicTagEnum.Blog)
     return (
       <div className="flex flex-col w-full gap-3">
-        {postsData.slice(0, 3).map((post) => (
-          <PostCard key={post.id} data={post} />
-        ))}
+        {allPosts
+          .sort((a, b) => {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+          })
+          .slice(0, 3)
+          .map((post) => (
+            <PostCard key={post._id} data={post} />
+          ))}
       </div>
     );
 };

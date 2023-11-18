@@ -1,5 +1,6 @@
 import { getBase64 } from '@/components/projects/utils/helpers';
 import Image from 'next/image';
+import { PHOTO_DATA } from '@/data/utils/constants';
 
 async function AboutMeContent() {
   return (
@@ -9,14 +10,12 @@ async function AboutMeContent() {
     >
       <div className="top-0 flex flex-col items-center gap-2 md:flex-row">
         <Image
-          src="https://res.cloudinary.com/ddwtkjumq/image/upload/v1695958632/portfolio/wmfwrsyi2upi4jzlessl.jpg"
-          alt="Carlos Tarmeño"
+          src={PHOTO_DATA.url}
+          alt={PHOTO_DATA.avatar}
           width={80}
           height={80}
           placeholder="blur"
-          blurDataURL={await getBase64(
-            'https://res.cloudinary.com/ddwtkjumq/image/upload/v1695958632/portfolio/wmfwrsyi2upi4jzlessl.jpg'
-          )}
+          blurDataURL={await getBase64(PHOTO_DATA.url)}
           className="w-20 h-20 border-4 rounded-full border-cd-dark-gray"
         />
         <div>

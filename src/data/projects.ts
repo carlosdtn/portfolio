@@ -1,5 +1,5 @@
 import { CardProps } from '@/components/shared/types/types';
-import { ResourceTypeEnum } from '@/data/types/types';
+import { ResourceTypeEnum } from '@/data/utils/types';
 
 export const projectData: Omit<CardProps, 'tags'>[] = [
   {

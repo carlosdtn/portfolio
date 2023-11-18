@@ -1,4 +1,4 @@
-import { SocialNetworksDataProps } from './types/types';
+import { SocialNetworksDataProps } from './utils/types';
 
 export const SocialNetworksData: SocialNetworksDataProps = {
   linkedin: 'https://www.linkedin.com/in/carlos-tarmeno/',

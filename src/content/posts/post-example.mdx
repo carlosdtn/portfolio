@@ -1,0 +1,71 @@
+---
+  title: "Markdown Post Example"
+  description: This is a example of all elements that you can use in a markdown post. Here you can see how to use headers, text styles, lists, links, images, blockquotes and code.
+  date: "2023-11-17"
+  author: {
+    name: "Carlos Tarmeño",
+    image: "https://res.cloudinary.com/ddwtkjumq/image/upload/v1695958632/portfolio/wmfwrsyi2upi4jzlessl.jpg"
+  }
+  image: /posts-image/horizon-ai.webp
+  lang: en
+---
+
+# Text Styles in Markdown
+
+This is a regular paragraph of text.
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+## Text Styles
+
+_Texto en cursiva_
+
+**Texto en negrita**
+
+**_Texto en cursiva y negrita_**
+
+## Lists
+
+### Ordered List
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+### Unordered List
+
+- Item A
+- Item B
+  - Subitem B.1
+  - Subitem B.2
+
+## Links
+
+[Link Text](https://www.example.com)
+
+## Images
+
+![Alt Text](/portfolio-logo.png)
+
+## Blockquotes
+
+> This is a blockquote.
+
+## Code
+
+`Inline Code`
+
+```javascript
+const formatDate = (date: string) => {
+  const options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
+  return new Date(date).toLocaleDateString('en-US', options);
+};
+```

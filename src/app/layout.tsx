@@ -7,14 +7,23 @@ import Footer from '@/components/layout/footer';
 import { Analytics } from '@/components/analytics/analytics';
 
 const inter = Inter({
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   subsets: ['latin']
 });
 
 export const metadata: Metadata = {
-  title: 'Carlos Tarmeño - Front-end Developer',
+  title: 'Carlos Tarmeño - Frontend Developer',
   description:
-    "Explore Carlos Tarmeño's portfolio showcasing frontend development expertise."
+    "Welcome to my portfolio! I'm Carlos Tarmeño, a dedicated Frontend Developer. Explore the projects and experiences that showcase my passion for creating engaging and responsive web solutions. Let's build something extraordinary together!",
+  keywords: [
+    'Carlos Tarmeño',
+    'Carlos Tarmeno',
+    'Frontend Developer',
+    'Web Development',
+    'React',
+    'Next.js',
+    'Portfolio'
+  ]
 };
 
 export default function RootLayout({

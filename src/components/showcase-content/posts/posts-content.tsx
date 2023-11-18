@@ -1,11 +1,11 @@
 import PostCard from '@/components/shared/molecules/post-card';
-import { postsData } from '@/data';
+import { allPosts } from 'contentlayer/generated';
 
 const PostContent = () => {
   return (
     <div className="flex flex-col w-full gap-3">
-      {postsData.map((post) => (
-        <PostCard key={post.id} data={post} />
+      {allPosts.map((post) => (
+        <PostCard key={post._id} data={post} />
       ))}
     </div>
   );

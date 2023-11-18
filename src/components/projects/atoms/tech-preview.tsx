@@ -41,7 +41,7 @@ const TechPreview: React.FC<TechPreviewProps> = React.memo(({ icons }) => {
     return (
       <div className="flex items-center justify-center w-8 opacity-60 group-focus">
         <Image
-          src="/porfolio-logo.png"
+          src="/portfolio-logo.png"
           width={26}
           height={26}
           alt="website logo"
