@@ -33,6 +33,14 @@ export const stackData: stackProps = {
     {
       name: 'SQL Server',
       icon: 'simple-icons:microsoftsqlserver'
+    },
+    {
+      name: 'React Native',
+      icon: 'devicon:react'
+    },
+    {
+      name: 'WordPress',
+      icon: 'ion:logo-wordpress'
     }
   ],
   learning: [
@@ -49,17 +57,10 @@ export const stackData: stackProps = {
       icon: 'logos:redux'
     },
     {
-      name: 'React Native',
-      icon: 'devicon:react'
-    },
-    {
       name: 'MongoDB',
       icon: 'vscode-icons:file-type-mongo'
     },
-    {
-      name: 'WordPress',
-      icon: 'ion:logo-wordpress'
-    },
+
     {
       name: 'Framer Motion',
       icon: 'devicon:framermotion'
@@ -81,6 +82,10 @@ export const stackData: stackProps = {
     {
       name: 'PHP',
       icon: 'logos:php'
+    },
+    {
+      name: 'Flutter',
+      icon: 'vscode-icons:file-type-flutter'
     }
   ]
 };

@@ -16,7 +16,7 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
     <section className="flex flex-col w-full gap-4">
       <div className="flex items-center justify-between rounded">
         <h1 className="text-2xl font-bold leading-tight">{title}</h1>
-        {(contentType === ShowcaseTypeEnum.Project ||
+        {/* {(contentType === ShowcaseTypeEnum.Project ||
           contentType === ShowcaseTypeEnum.Blog) && (
           <Button
             variant="text"
@@ -25,7 +25,7 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({
           >
             Filter
           </Button>
-        )}
+        )} */}
       </div>
       {renderContent && renderContent}
     </section>
