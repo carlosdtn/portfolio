@@ -13,7 +13,7 @@ const PostHeader = ({ post }: PostHeaderProps) => {
         <h1 className="text-2xl font-bold leading-8 md:leading-10 md:text-3xl">
           {post.title}
         </h1>
-        <p className="text-sm font-normal leading-5 text-justify text-slate-400">
+        <p className="text-sm font-normal leading-5 text-justify dark:text-slate-400 text-cd-gray">
           {post.description}
         </p>
       </div>
@@ -26,7 +26,9 @@ const PostHeader = ({ post }: PostHeaderProps) => {
           height={30}
         />
         <div className="flex flex-col justify-center">
-          <span className="font-semibold text-white">{post.author?.name}</span>
+          <span className="font-semibold text-foreground">
+            {post.author?.name}
+          </span>
           <div className="flex items-center gap-1 text-cd-light-blue">
             <span className="text-xs font-light">{formatDate(post.date)}</span>
           </div>

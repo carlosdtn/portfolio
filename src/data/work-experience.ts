@@ -36,13 +36,12 @@ export const workExperienceData: WorkExperienceProps[] = [
     startDate: '12-05-2022',
     endDate: '05-31-2023',
     responsibilities: [
-      'Perform functional configurations of applications integrated into the HR system.',
-      'Provide support for applications and systems in the HR department.',
-      'Develop new web applications and functionalities for HR systems.',
-      'Document new implementations and updates.',
-      'Conduct training sessions for users on new developments or changes.',
-      'Manage the creation and access of system users.',
-      'Automate user management in Moodle, creating a Node.js-based service.'
+      'Configuration and maintenance of HR web applications.',
+      'Development of new web applications/services for HR systems.',
+      'Documentation of implementations and updates.',
+      'Support for HR applications and systems.',
+      'Development of a service for new hires synchronization with the virtual campus (Node.JS).',
+      'Development of a service for synchronization of markings in the hospital complex (.NET).'
     ]
   },
   {
@@ -64,6 +63,25 @@ export const workExperienceData: WorkExperienceProps[] = [
       'Improved Progressive Web App (PWA) functionality to enhance user experience.',
       'Reviewed and refined contact schema.',
       'Enabled user profile image editing functionality.'
+    ]
+  },
+  {
+    id: 4,
+    workType: WorkTypeEnum.Freelance,
+    company: 'GEVT Group',
+    position: 'Frontend Developer',
+    logo: {
+      src: '/company-logo/gevt-group.png',
+      alt: 'GEVT Group logo'
+    },
+    startDate: '09-11-2023',
+    endDate: '11-25-2023',
+    responsibilities: [
+      'Visual interface and flow design in Figma.',
+      'Development of a responsive website consistent with the brand identity.',
+      'Implementation of an interactive form and product search section by categories.',
+      'Communication with the client to capture requirements and adjust the design.',
+      'Optimization of site performance.'
     ]
   }
 ];

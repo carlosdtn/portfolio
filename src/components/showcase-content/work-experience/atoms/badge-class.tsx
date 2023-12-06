@@ -11,26 +11,26 @@ interface BadgeClassProps {
 }
 
 const BadgeClass: React.FC<BadgeClassProps> = ({ type }) => {
-  const iconsType = {
-    [WorkTypeEnum.Collaborative]: (
-      <IconUsersGroup width="20" height="20" className="text-black" />
-    ),
-    [WorkTypeEnum.Corporate]: (
-      <IconBuildingSkyscraper width="20" height="20" className="text-black" />
-    ),
-    [WorkTypeEnum.Freelance]: (
-      <IconBriefcase width="20" height="20" className="text-black" />
-    ),
-    [WorkTypeEnum.Volunteer]: (
-      <IconHeartCode width="20" height="20" className="text-black" />
-    )
-  };
-
   return (
-    <div className="flex items-center justify-center w-10 h-10 p-1 bg-white hexagon">
+    <div className="flex items-center justify-center w-10 h-10 p-1 bg-foreground hexagon">
       {iconsType[type]}
     </div>
   );
+};
+
+export const iconsType = {
+  [WorkTypeEnum.Collaborative]: (
+    <IconUsersGroup width="20" height="20" className="text-muted" />
+  ),
+  [WorkTypeEnum.Corporate]: (
+    <IconBuildingSkyscraper width="20" height="20" className="text-muted" />
+  ),
+  [WorkTypeEnum.Freelance]: (
+    <IconBriefcase width="20" height="20" className="text-muted" />
+  ),
+  [WorkTypeEnum.Volunteer]: (
+    <IconHeartCode width="20" height="20" className="text-muted" />
+  )
 };
 
 export default BadgeClass;

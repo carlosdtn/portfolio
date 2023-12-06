@@ -41,10 +41,23 @@
     --ring: 20 14.3% 4.1%;
 
     --radius: 0.5rem;
+
+    --cd-dark-blue: 221 47% 50%;
+    --cd-midnight-blue: 234 17% 16%;
+    --cd-light-blue: 198 100% 40%;
+    --cd-gray: 0 0% 40%;
+    --cd-purple: 250 100% 60%;
+    --cd-green: 146 98% 82%;
+    --cd-dark-gray: 0 9% 80%;
+    --cd-orange: 24 100% 50%;
+    --cd-lime: 81 37% 40%;
+
+    --cd-preview: 142 87% 36%;
+    --cd-separator: 0 0% 5%;
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: 221 47% 7%;
     --foreground: 60 9.1% 97.8%;
 
     --card: 20 14.3% 4.1%;
@@ -79,6 +92,11 @@
     --cd-purple: 250 100% 60%;
     --cd-green: 146 98% 82%;
     --cd-dark-gray: 0 9% 30%;
+    --cd-orange: 24 100% 50%;
+    --cd-lime: 81 37% 70%;
+
+    --cd-preview: 146 98% 82%;
+    --cd-separator: 0 0% 85%;
   }
 }
 
@@ -177,15 +195,15 @@ article h6 {
 }
 
 article p {
-  @apply text-base leading-7 mt-7 text-justify text-slate-400;
+  @apply text-base leading-7 mt-7 text-justify dark:text-slate-400 text-cd-gray;
 }
 
 article a {
-  @apply text-cd-green transition-colors duration-200;
+  @apply text-cd-preview transition-colors duration-200;
 }
 
 article a:hover {
-  @apply text-cd-green underline;
+  @apply text-cd-preview underline;
 }
 
 article ul {
@@ -201,7 +219,7 @@ article ol {
 }
 
 article li {
-  @apply text-base leading-6 mt-2 text-slate-400;
+  @apply text-base leading-6 mt-2 dark:text-slate-400 text-cd-gray;
 }
 
 article blockquote {
@@ -209,7 +227,7 @@ article blockquote {
 }
 
 article blockquote p {
-  @apply text-base leading-3 mt-0;
+  @apply text-base leading-3 mt-0 text-slate-400;
 }
 
 article table {
@@ -233,7 +251,7 @@ article hr {
 }
 
 article img {
-  @apply mx-auto;
+  @apply mx-auto aspect-video;
 }
 
 article code {
@@ -249,7 +267,7 @@ article pre code {
 }
 
 article strong {
-  @apply text-white;
+  @apply text-foreground;
 }
 
 @media (prefers-color-scheme: dark) {

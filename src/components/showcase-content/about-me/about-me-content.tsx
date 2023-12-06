@@ -19,14 +19,14 @@ async function AboutMeContent() {
           className="w-20 h-20 border-4 rounded-full border-cd-dark-gray"
         />
         <div>
-          <h1 className="font-bold text-center text-white md:text-start">
+          <h1 className="font-bold text-center text-foreground md:text-start">
             That's me, Carlos Tarmeño
           </h1>
           <p className="text-sm text-center text-cd-gray md:text-start">
-            I am a student of Software Engineering at the National University of
-            San Marcos, currently in my tenth semester. I am someone who seeks
-            new challenges, self-motivated, proactive, responsible, and eager to
-            expand my knowledge as a Front-end web developer.
+            Graduate in Software Engineering with 1 year of experience in web
+            development, specializing in React, seeking opportunities to apply
+            my expertise in creating engaging and functional user interfaces.
+            Committed to continuous improvement and adaptability.
           </p>
         </div>
       </div>

@@ -17,14 +17,14 @@ const PostCard: React.FC<{
             <IconCalendar size={14} />
             <p>{format(new Date(data.date || ''), 'MMM dd, yyyy')}</p>
           </div>
-          <Separator orientation="vertical" className="bg-cd-gray/10" />
-          <div className="flex items-center gap-1 text-slate-400">
+          <Separator orientation="vertical" className="bg-cd-separator/10" />
+          <div className="flex items-center gap-1 dark:text-slate-400 text-slate-700">
             <IconClock size={14} />
             <p>{data.readingTime?.text || '1 min'}</p>
           </div>
-          <Separator orientation="vertical" className="bg-cd-gray/10" />
+          <Separator orientation="vertical" className="bg-cd-separator/10" />
           <div className="flex items-center">
-            <span className="px-2 font-semibold text-black uppercase rounded-sm bg-cd-green/80">
+            <span className="px-2 font-semibold uppercase rounded-sm text-muted bg-cd-preview/80">
               {data.lang}
             </span>
           </div>

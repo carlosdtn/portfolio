@@ -1,5 +1,7 @@
-import WorkExperienceItem from './atoms/work-experience-item';
+import { Separator } from '@/components/ui/separator';
 import { workExperienceData } from '@/data';
+import WorkExperienceItem from './atoms/work-experience-item';
+import Legend from './molecules/legend';
 
 const WorkExperienceContent = () => {
   return (
@@ -15,6 +17,8 @@ const WorkExperienceContent = () => {
             <WorkExperienceItem key={workExperience.id} data={workExperience} />
           ))}
       </ul>
+      <Separator orientation="horizontal" className="bg-cd-separator/10" />
+      <Legend />
     </div>
   );
 };

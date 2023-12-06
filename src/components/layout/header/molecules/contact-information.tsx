@@ -24,7 +24,7 @@ const ContactInformation = () => {
           text="/danielsec_"
         />
       </div>
-      <Separator orientation="horizontal" />
+      <Separator orientation="horizontal" className="bg-cd-separator/10" />
       <div className="flex flex-col justify-center gap-4 text-sm">
         <p>Also you can send me an email to:</p>
         <div className="flex justify-center">

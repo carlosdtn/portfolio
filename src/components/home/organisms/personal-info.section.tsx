@@ -9,7 +9,7 @@ const PersonalInfoSection = () => {
       </h3>
       <h1 className="text-[2.15rem] md:text-4xl font-extrabold tracking-tight">
         I'm{' '}
-        <span className="text-transparent bg-gradient-to-r bg-clip-text from-cd-purple via-cd-light-blue to-cd-green animate-text animate-gradient">
+        <span className="text-transparent bg-gradient-to-r bg-clip-text from-cd-purple via-cd-light-blue to-cd-preview animate-text animate-gradient">
           Carlos Tarmeño
         </span>
         , a <br className="hidden md:block" />

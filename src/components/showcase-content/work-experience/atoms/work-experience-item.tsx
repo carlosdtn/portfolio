@@ -29,7 +29,7 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
 
   return (
     <li className="relative flex gap-3 md:gap-4 group">
-      <div className="absolute h-full border-l border-dashed left-[1.21rem] top-4 border-white/40 group-last:border-none" />
+      <div className="absolute h-full border-l border-dashed left-[1.21rem] top-4 dark:border-white/40 border-foreground/80 group-last:border-none" />
       <span className="absolute left-0 hidden px-1 text-xs font-semibold text-black rounded-sm shadow-md top-12 group-first-of-type:block bg-amber-300 animate-pulse shadow-amber-200">
         latest
       </span>
@@ -48,9 +48,9 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
             />
           </div>
           <div className="flex flex-col items-start">
-            <p className="flex items-center gap-0 font-bold md:gap-2 whitespace-nowrap">
-              <span>{data.company}</span>
-              <span className="hidden px-1 text-xs font-semibold border rounded-sm text-lime-200 border-lime-200 md:flex">
+            <p className="flex items-center gap-0 md:gap-2 whitespace-nowrap">
+              <span className="font-bold">{data.company}</span>
+              <span className="hidden px-1 text-xs font-semibold border rounded-sm text-cd-lime border-cd-lime md:flex">
                 {data.position}
               </span>
             </p>
@@ -59,7 +59,7 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
             </p>
           </div>
         </div>
-        <p className="px-1 text-xs font-semibold border rounded-sm text-lime-200 border-lime-200 md:hidden">
+        <p className="px-1 text-xs font-semibold border rounded-sm text-cd-lime border-cd-lime md:hidden">
           {data.position}
         </p>
         <ul className="flex flex-col gap-2 pl-5 text-sm list-disc list-outside text-cd-gray marker:text-cd-light-blue/40">

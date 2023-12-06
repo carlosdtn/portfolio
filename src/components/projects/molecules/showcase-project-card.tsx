@@ -20,7 +20,7 @@ async function ShowcaseProjectCard({ data }: { data: Partial<CardProps> }) {
         src={data.image?.src || defaultImages.image.src}
         alt={data.image?.src || defaultImages.image.alt}
       />
-      <span className="m-1 text-xs font-semibold absolute py-[0.1rem] px-[0.3rem] rounded-sm text-cd-light-blue backdrop-blur-lg bg-cd-dark-blue/60">
+      <span className="m-1 text-xs font-semibold absolute py-[0.1rem] px-[0.3rem] rounded-sm text-cd-light-blue backdrop-blur-lg dark:bg-cd-dark-blue/60 bg-white/70 shadow-md">
         {formattedDate(data.date).year}
       </span>
       <div className="flex flex-row items-center gap-2">

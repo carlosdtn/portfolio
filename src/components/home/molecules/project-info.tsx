@@ -21,13 +21,13 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ data, isCompact }) => {
         <Button
           type="button"
           variant="icon"
-          className="w-auto h-auto p-0 transition-colors duration-500 hover:bg-cd-green/20"
+          className="w-auto h-auto p-0 transition-colors duration-500 hover:bg-cd-preview/20"
         >
-          <IconDots className="text-cd-green" size={18} />
+          <IconDots className="text-cd-preview" size={18} />
         </Button>
       </HoverCardTrigger>
       <HoverCardContent
-        className="grid w-auto grid-cols-4 gap-2 -top-20 sm:grid-flow-col-dense"
+        className="grid w-auto grid-cols-4 gap-2 bg-cd-dark-gray/20 -top-20 sm:grid-flow-col-dense"
         sideOffset={isCompact ? 40 : 143}
         side="top"
       >

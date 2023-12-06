@@ -27,7 +27,7 @@ const SheetOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Overlay
     className={cn(
-      'fixed inset-0 z-50 bg-background/80 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+      'fixed inset-0 z-50 bg-background/70 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
       className
     )}
     {...props}
@@ -42,7 +42,7 @@ const sheetVariants = cva(
     variants: {
       side: {
         center:
-          'inset-0 w-[85%] md:w-[22rem] h-fit shadow-inner backdrop-blur-md bg-gray-950/50 border border-dark-gray/10 rounded-lg m-auto top-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
+          'inset-0 w-[85%] md:w-[22rem] h-fit shadow-inner backdrop-blur-md dark:bg-gray-950/50 bg-white/50 border border-dark-gray/10 rounded-lg m-auto top-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
         top: 'inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
         bottom:
           'inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom',
@@ -73,7 +73,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="hover:bg-cd-light-blue/10 flex items-center justify-center border h-8 w-8 bg-transparent text-primary-muted p-0 border-white/20 absolute right-4 top-4 rounded-sm opacity-80 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary">
+      <SheetPrimitive.Close className="hover:bg-cd-light-blue/10 flex items-center justify-center border h-8 w-8 bg-transparent text-primary-muted p-0 border-foreground/20 absolute right-4 top-4 rounded-sm opacity-80 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary">
         <X className="w-5 h-5" />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>
