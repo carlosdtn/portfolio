@@ -4,7 +4,7 @@ import { iconsType } from '../atoms/badge-class';
 const Legend = () => {
   return (
     <div className="flex flex-col items-center gap-5">
-      <span className="font-bold underline">Lengend</span>
+      <span className="font-bold underline">Legend</span>
       <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 place-items-center">
         {Object.keys(iconsType).map((key) => (
           <div className="flex flex-col items-center justify-center gap-2">
