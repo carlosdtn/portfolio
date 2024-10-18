@@ -1,29 +1,22 @@
 import { WorkExperienceProps } from '@/components/shared/types/types';
-import BadgeClass from './badge-class';
+import dayjs from 'dayjs';
 import Image from 'next/image';
+import BadgeClass from './badge-class';
 
 interface WorkExperienceItemProps {
   data: WorkExperienceProps;
 }
 
 const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
-  const formattedRangeDate = (startDate: string, endDate: string) => {
-    const start: Date = new Date(startDate);
-    const end: Date = new Date(endDate);
-    const startMonth: string = start
-      .toLocaleDateString('en-US', {
-        month: 'long'
-      })
-      .toLowerCase();
-    const endMonth: string = end
-      .toLocaleDateString('en-US', {
-        month: 'long'
-      })
-      .toLowerCase();
-    const startYear: number = start.getFullYear();
-    const endYear: number = end.getFullYear();
-    const formattedStartDate: string = `${startMonth} ${startYear}`;
-    const formattedEndDate: string = `${endMonth} ${endYear}`;
+  const formattedRangeDate = (startDate: string, endDate?: string) => {
+    const start = dayjs(startDate);
+    const end = endDate ? dayjs(endDate) : dayjs();
+    const formattedStartDate = start.format('MMMM YYYY').toLowerCase();
+
+    const formattedEndDate = endDate
+      ? end.format('MMMM YYYY').toLowerCase()
+      : 'currently working';
+
     return `${formattedStartDate} - ${formattedEndDate}`;
   };
 

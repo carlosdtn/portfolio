@@ -83,5 +83,23 @@ export const workExperienceData: WorkExperienceProps[] = [
       'Communication with the client to capture requirements and adjust the design.',
       'Optimization of site performance.'
     ]
+  },
+  {
+    id: 5,
+    workType: WorkTypeEnum.Corporate,
+    company: 'IDBI',
+    position: 'Frontend Developer',
+    logo: {
+      src: '/company-logo/idbi.png',
+      alt: 'MegaRed logo'
+    },
+    startDate: '12-10-2023',
+    endDate: undefined,
+    responsibilities: [
+      'Maintenance and optimization of submodules',
+      'Development and integration of new functionalities',
+      'Technical documentation and version control management',
+      'Optimization of application performance and user experience'
+    ]
   }
 ];

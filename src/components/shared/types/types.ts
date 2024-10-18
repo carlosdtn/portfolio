@@ -51,6 +51,6 @@ export interface WorkExperienceProps {
     alt: string;
   };
   startDate: string;
-  endDate: string;
+  endDate: string | undefined;
   responsibilities: string[];
 }
